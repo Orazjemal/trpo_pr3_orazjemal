@@ -1,0 +1,25 @@
+:root { --dashboard-ink: #202a3b; --dashboard-muted: #6c7a90; --dashboard-accent: #315efb; --dashboard-bg: #f3f6fb; --dashboard-border: #e3e9f2; }
+body { color: var(--dashboard-ink); background: var(--dashboard-bg); font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+.dashboard-nav { min-height: 68px; background: #172338; }
+.brand-symbol { width: 32px; height: 32px; display: inline-grid; place-items: center; border-radius: 9px; color: #172338; background: #a9c4ff; }
+.avatar { border-radius: 50%; border: 2px solid rgba(255,255,255,.4); }
+.section-kicker { color: #5270bb; text-transform: uppercase; font-size: .72rem; font-weight: 800; letter-spacing: .12em; }
+.metric-card, .panel-card { border: 1px solid var(--dashboard-border); border-radius: 14px; box-shadow: 0 8px 24px rgba(26, 44, 77, .04); }
+.metric-card .card-body { padding: 1.25rem; }
+.metric-label { color: var(--dashboard-muted); font-size: .88rem; font-weight: 650; }
+.metric-value { margin-top: .3rem; color: #1b2c4a; font-size: 2.25rem; font-weight: 750; letter-spacing: -.04em; line-height: 1.15; }
+.metric-foot { margin-top: 1rem; display: flex; align-items: center; gap: .45rem; color: var(--dashboard-muted); font-size: .8rem; }
+.metric-dot { width: 9px; height: 9px; border-radius: 50%; }
+.dot-blue { background: #4d78e8; }.dot-purple { background: #8b6be0; }.dot-orange { background: #e9a044; }
+.progress { height: 7px; background: #e9eef8; }.progress-bar { background: #4d78e8; border-radius: 10px; }
+.panel-card { overflow: hidden; }
+.status-filter { min-width: 145px; }
+.dashboard-table thead th { padding: .8rem 1rem; color: #78869b; background: #f8faff; font-size: .77rem; font-weight: 750; letter-spacing: .04em; text-transform: uppercase; white-space: nowrap; }
+.dashboard-table tbody th, .dashboard-table tbody td { padding: .85rem 1rem; }
+.dashboard-table tbody th { color: #8793a5; font-size: .85rem; font-weight: 600; }
+.status-badge { display: inline-flex; align-items: center; padding: .3rem .65rem; border-radius: 999px; font-size: .76rem; font-weight: 700; white-space: nowrap; }
+.status-progress { color: #385caf; background: #eaf0ff; }.status-done { color: #278151; background: #e4f6ec; }.status-new { color: #94691b; background: #fff4dc; }
+.chart-image { display: block; width: 100%; border-radius: 12px; background: #f7f9fd; }
+.toast-indicator { width: 10px; height: 10px; border-radius: 50%; background: #208754; }
+.toast-indicator.warning { background: #e4a11b; }
+@media (max-width: 575.98px) { .dashboard-nav .navbar-brand { font-size: .98rem; } #reminderButton { font-size: .76rem; } .metric-card .card-body { padding: 1rem; } .dashboard-table tbody th, .dashboard-table tbody td { padding: .75rem .65rem; } }
